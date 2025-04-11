@@ -23,7 +23,7 @@ pipeline{
             steps{
                 sh'''
                     echo "Test stage"
-                    cat build/index.html
+                    test -f build/index.html
                 '''
             }
         }
